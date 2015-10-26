@@ -11,11 +11,13 @@ I needed a simple highlighter that works with multiple words and React 0.14
 
 ### How to use?
 
-1. `npm install react-text-highlighter`;
-2. `import Highlighter from 'react-text-highlighter;`
+`npm install react-text-highlighter`;
 
 Create a simple `component` and wrap in `Highlighter`. For example using a stateless `component`:
 ```js
+import Highlighter from 'react-text-highlighter;
+...
+
 const MyComponent = ({highlightedText}) =>
 <div id="result" dangerouslySetInnerHTML={ {__html: highlightedText}}/>;
 
