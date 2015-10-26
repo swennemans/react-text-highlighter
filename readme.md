@@ -1,3 +1,6 @@
+# WIP almost finished.
+
+
 # React-Text-Highlighter
 
 Simple High Order Component that allows you to highlight your text based on text matches.
@@ -21,7 +24,7 @@ export default HighLighter(MyComponent);
 ```
 Than you could cleanly add it in a higher level component like:
 ```
-<Highlighter highlight={"Foo"} text={"Foo bar baz"} options={opts} />
+<HighLighter highlight={"Foo"} text={"Foo bar baz"} options={opts} />
 ```
 
 ### Options
