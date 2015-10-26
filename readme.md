@@ -22,7 +22,7 @@ const MyComponent = ({highlightedText}) =>
 <div id="result" dangerouslySetInnerHTML={ {__html: highlightedText}}/>;
 
 //!important
-export default HighLighter(MyComponent);
+export default Highlighter(MyComponent);
 ```
 Than you could cleanly add it in a higher level component like:
 ```
