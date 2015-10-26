@@ -4,7 +4,7 @@ export const createRegEx = (text, caseSensitive) => {
 };
 
 export const createHTMLString = (HTMLString, reg, highlightClass) => {
-  return HTMLString.replace(reg, (str) => {return `<span className=\"${highlightClass}\">${str}</span>`;});
+  return HTMLString.replace(reg, (str) => {return `<span class=\"${highlightClass}\">${str}</span>`;});
 };
 
 export const createHighlight = (highlight, text, options) => {
@@ -21,7 +21,7 @@ export const createHighlight = (highlight, text, options) => {
     });
     return HTMLString;
   } else {
-    if (highlight === '' || highlight === ' ') return;
+    if (highlight === '' || highlight ===  ' ') return text;
     const reg = createRegEx(highlight, caseSensitive);
     HTMLString = createHTMLString(HTMLString, reg, highlightClass);
     return HTMLString;

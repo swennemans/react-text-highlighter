@@ -9,6 +9,11 @@ export const Highlighter = ComposedComponent => class extends Component {
       highlightedText: ''
     };
   }
+  componentDidMount() {
+    const {highlight, text, options} = this.props;
+    const highlightedText = createHighlight(highlight, text, options);
+    this.setState({highlightedText});
+  }
   componentWillReceiveProps (nextProps) {
     const {highlight, text, options} = nextProps;
     const highlightedText = createHighlight(highlight, text, options);

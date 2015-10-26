@@ -13,7 +13,9 @@ I needed a simple highlighter that works with multiple words and React 0.14
 
 `npm install react-text-highlighter`;
 
-Create a simple `component` and wrap in `Highlighter`. For example using a stateless `component`:
+Create a `component` and wrap it in `Highlighter`.
+
+Quick example  using a stateless `component`:
 ```js
 import Highlighter from 'react-text-highlighter';
 ...
@@ -29,12 +31,15 @@ Than you could cleanly add it in a higher level component like:
 <HighLighter highlight={"Foo"} text={"Foo bar baz"} options={opts} />
 ```
 
+Check the `example` dir for a simple example or run the example with: `npm run example`
+
 ### Options
 You need to pass an option object with the following properties:
 ```
-{ caseSensitive: true //true or false
+{
+  caseSensitive: true //true or false
   highlightClass: 'highlighted-text' // className for your highlighted text
-]
+}
 ```
 
 #### dangerouslySetInnerHTML?
@@ -48,3 +53,4 @@ allows you to:
 ```
 
 #### Alternatives
+
