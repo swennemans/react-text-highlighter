@@ -54,6 +54,6 @@ allows you to:
 
 ## Alternatives
 
-[react-text-highlight](https://github.com/henriquea/react-text-highlight)
-[react-hi-text](https://github.com/rwu823/react-hi-text)
+- [react-text-highlight](https://github.com/henriquea/react-text-highlight)
+- [react-hi-text](https://github.com/rwu823/react-hi-text)
 
