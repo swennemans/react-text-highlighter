@@ -1,5 +1,3 @@
-# WIP almost finished.
-
 
 # React-Text-Highlighter
 
@@ -7,7 +5,9 @@ Simple High Order Component that allows you to highlight your text based on text
 
 ### Why?
 
-I needed a simple highlighter that works with multiple words and React 0.14
+I needed a simple highlighter that works with React 0.14 and multiple non-connected words.
+
+![](https://raw.githubusercontent.com/swennemans/react-text-highlighter/master/example/example.gif)
 
 ### How to use?
 
@@ -44,8 +44,8 @@ You need to pass an option object with the following properties:
 
 #### dangerouslySetInnerHTML?
 
-The component returns a HTML string which you need to set with `dangerouslysetInnerHTML`, otherwise highlighting multiple words
-became very complicated. If you **don't** trust the source of your highlighted text. Use a library like [DOMPurify](https://github.com/cure53/DOMPurify). This
+The component returns a HTML string which you need to set with `dangerouslysetInnerHTML`, otherwise highlighting highlighting multiple words
+becomes very complex. If you **don't** trust the source of your highlighted text. Use a library like [DOMPurify](https://github.com/cure53/DOMPurify). This
 allows you to:
 
 ```js
@@ -54,3 +54,5 @@ allows you to:
 
 #### Alternatives
 
+[react-text-highlight](https://github.com/henriquea/react-text-highlight)
+[react-hi-text](https://github.com/rwu823/react-hi-text)
