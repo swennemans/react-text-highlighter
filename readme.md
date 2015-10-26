@@ -15,7 +15,7 @@ I needed a simple highlighter that works with multiple words and React 0.14
 
 Create a simple `component` and wrap in `Highlighter`. For example using a stateless `component`:
 ```js
-import Highlighter from 'react-text-highlighter;
+import Highlighter from 'react-text-highlighter';
 ...
 
 const MyComponent = ({highlightedText}) =>
