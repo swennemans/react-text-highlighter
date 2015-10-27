@@ -31,7 +31,7 @@ Now you can cleanly add it like:
 <HighLighter highlight={"Foo"} text={"Foo bar baz"} options={opts} />
 ```
 
-Check the `example` dir for a simple example or run the example with: `npm run example`
+Check the `example` dir for a simple example. You can run the example with: `npm run example`
 
 ## Options
 You need to pass an option object with the following properties:
@@ -49,7 +49,10 @@ becomes very complex. If you **don't** trust the source of your highlighted text
 allows you to:
 
 ```js
-{dangerouslySetInnerHTML: __html: DOMpurify(highlightedText)}
+import DOMPurify from 'dompurify';
+...
+
+<div dangerouslySetInnerHTML={ {__html: DOMPurify.sanitize(highlightedText)} }/>
 ```
 
 ## Alternatives
